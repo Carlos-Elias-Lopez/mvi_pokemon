@@ -4,7 +4,7 @@ import com.example.mvi_pokemon.model.Pokemon
 import com.example.mvi_pokemon.utils.EntityMapper
 import javax.inject.Inject
 
-class NetWorkMapper
+class NetworkMapper
 @Inject
 constructor(): EntityMapper<PokemonNetworkEntity, Pokemon> {
     override fun mapFromEntity(entity: PokemonNetworkEntity): Pokemon {
