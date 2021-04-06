@@ -8,5 +8,5 @@ abstract class PokemonDatabase : RoomDatabase() {
     companion object{
         val DATABASE_NAME = "CatDB"
     }
-    abstract fun catDao(): PokemonDao
+    abstract fun pokemonDao(): PokemonDao
 }
