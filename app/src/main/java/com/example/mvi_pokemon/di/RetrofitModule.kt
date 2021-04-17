@@ -28,7 +28,7 @@ object RetrofitModule {
     @Provides
     fun provideRetrofit(gson: Gson): Retrofit.Builder {
         return Retrofit.Builder()
-            .baseUrl("https://pokeapi.co/api/v2/pokemon/")
+            .baseUrl("https://pokeapi.co/api/v2/")
             .addConverterFactory(GsonConverterFactory.create(gson))
     }
 

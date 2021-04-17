@@ -11,9 +11,7 @@ constructor(): EntityMapper<PokemonNetworkEntity, Pokemon> {
         return Pokemon(
             id = entity.id,
             name = entity.name,
-            url = entity.url,
-            height = entity.height,
-            width = entity.width
+            url = entity.url
         )
     }
 
@@ -22,9 +20,7 @@ constructor(): EntityMapper<PokemonNetworkEntity, Pokemon> {
         return PokemonNetworkEntity(
             id = domainModel.id,
             name = domainModel.name,
-            url = domainModel.url,
-            height = domainModel.height,
-            width = domainModel.width
+            url = domainModel.url
         )
     }
 

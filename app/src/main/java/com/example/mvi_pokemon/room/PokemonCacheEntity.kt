@@ -12,9 +12,5 @@ class PokemonCacheEntity(
     @ColumnInfo(name = "name")
     var name: String,
     @ColumnInfo(name = "url")
-    var url: String,
-    @ColumnInfo(name = "width")
-    var width: Int,
-    @ColumnInfo(name = "height")
-    var height: Int
+    var url: String
 )

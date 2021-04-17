@@ -16,11 +16,5 @@ class PokemonNetworkEntity (
     @Expose
     var url: String,
 
-    @SerializedName("width")
-    @Expose
-    var width: Int,
 
-    @SerializedName("height")
-    @Expose
-    var height: Int,
 )
