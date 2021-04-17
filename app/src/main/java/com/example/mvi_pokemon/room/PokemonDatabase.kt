@@ -6,7 +6,7 @@ import androidx.room.RoomDatabase
 @Database(entities = [PokemonCacheEntity::class], version = 1)
 abstract class PokemonDatabase : RoomDatabase() {
     companion object{
-        val DATABASE_NAME = "CatDB"
+        val DATABASE_NAME = "PokemonDB"
     }
     abstract fun pokemonDao(): PokemonDao
 }

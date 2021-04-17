@@ -27,4 +27,8 @@ constructor():
             width = domainModel.width
         )
     }
+
+    fun mapFromEntityList(entities: List<PokemonCacheEntity>): List<Pokemon>{
+        return entities.map { mapFromEntity(it) }
+    }
 }

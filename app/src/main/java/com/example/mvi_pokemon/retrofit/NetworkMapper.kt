@@ -27,4 +27,8 @@ constructor(): EntityMapper<PokemonNetworkEntity, Pokemon> {
             width = domainModel.width
         )
     }
+
+    fun mapFromEntityList(entities: List<PokemonNetworkEntity>): List<Pokemon>{
+        return entities.map { mapFromEntity(it) }
+    }
 }
