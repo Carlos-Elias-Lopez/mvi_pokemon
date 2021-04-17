@@ -8,11 +8,11 @@ import com.example.mvi_pokemon.room.PokemonDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.components.SingletonComponent
+import dagger.hilt.android.components.ApplicationComponent
 import javax.inject.Singleton
 
 @Module
-@InstallIn(SingletonComponent ::class)
+@InstallIn(ApplicationComponent::class)
    object RepositoryModule {
 
     @Singleton
