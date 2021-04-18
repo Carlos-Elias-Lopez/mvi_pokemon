@@ -6,9 +6,9 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName =  "pokemon")
 class PokemonCacheEntity(
-    @PrimaryKey(autoGenerate = false)
+    @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
-    var id: String,
+    var id: Long,
     @ColumnInfo(name = "name")
     var name: String,
     @ColumnInfo(name = "url")

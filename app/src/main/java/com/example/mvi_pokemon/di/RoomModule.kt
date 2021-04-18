@@ -19,7 +19,8 @@ import javax.inject.Singleton
     @Provides
     fun providePokemonDB(@ApplicationContext context: Context): PokemonDatabase {
         return Room
-            .databaseBuilder(context, PokemonDatabase::class.java, PokemonDatabase.DATABASE_NAME).fallbackToDestructiveMigration().build()
+            .databaseBuilder(context, PokemonDatabase::class.java, PokemonDatabase.DATABASE_NAME)
+            .fallbackToDestructiveMigration().build()
     }
 
     @Singleton

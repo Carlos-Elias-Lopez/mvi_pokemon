@@ -4,5 +4,5 @@ import retrofit2.http.GET
 
 interface PokemonRetrofit {
     @GET("pokemon")
-    suspend fun get(): List<PokemonNetworkEntity>
+    suspend fun get(): PokemonsAPIResponse
 }

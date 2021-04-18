@@ -21,7 +21,7 @@ class PokemonRepository constructor(
         delay(1000)
         try {
             val pokemonData = pokemonRetrofit.get()
-            val pokemonMap = networkMapper.mapFromEntityList(pokemonData)
+            val pokemonMap = networkMapper.mapFromEntityList(pokemonData.results)
             for (tempPokemon in pokemonMap){
                 pokemonDao.insert(cacheMapper.mapToEntity(tempPokemon))
             }

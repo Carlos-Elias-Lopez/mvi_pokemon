@@ -18,7 +18,7 @@ constructor():
 
     override fun mapToEntity(domainModel: Pokemon): PokemonCacheEntity {
         return PokemonCacheEntity(
-            id = domainModel.id,
+            id = 0,
             name = domainModel.name,
             url = domainModel.url
         )

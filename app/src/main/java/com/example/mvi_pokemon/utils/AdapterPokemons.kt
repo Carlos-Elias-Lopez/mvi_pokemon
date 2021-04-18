@@ -36,13 +36,16 @@ class AdapterPokemons () : RecyclerView.Adapter<AdapterPokemons.ViewHolder>() {
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val model= items[position]
         holder.sizeInfo.text = model.name
+
         Picasso.get()
-            .load(model.url)
-            .into( holder.catImage)
+                .load(model.url)
+                .into(holder.pokemonImage)
+
     }
     class ViewHolder (view: View) : RecyclerView.ViewHolder(view) {
-        // Holds the TextView that will add each picture to
-        val catImage: ImageView = view.pokemon_image
+        // Estas son las variables que almacenaran para presentarlos en item_Pokemons
+        val pokemonImage: ImageView = view.pokemon_image
+        //val pokemonImage: ImageView = view.pokemon_image
         val sizeInfo: TextView = view.size_info
     }
 }

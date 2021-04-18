@@ -58,7 +58,7 @@ constructor(
                 when (it) {
                     is DataState.Success -> {
                         displayProgressBar(false)
-//                    appendCatID(dataState.data)
+
                         pokemonsAdapter.setCats(it.pokemons)
                     }
                     is DataState.Error -> {

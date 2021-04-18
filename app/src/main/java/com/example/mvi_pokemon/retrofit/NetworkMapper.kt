@@ -9,7 +9,7 @@ class NetworkMapper
 constructor(): EntityMapper<PokemonNetworkEntity, Pokemon> {
     override fun mapFromEntity(entity: PokemonNetworkEntity): Pokemon {
         return Pokemon(
-            id = entity.id,
+            id = null,
             name = entity.name,
             url = entity.url
         )
@@ -18,7 +18,6 @@ constructor(): EntityMapper<PokemonNetworkEntity, Pokemon> {
 
     override fun mapToEntity(domainModel: Pokemon): PokemonNetworkEntity {
         return PokemonNetworkEntity(
-            id = domainModel.id,
             name = domainModel.name,
             url = domainModel.url
         )

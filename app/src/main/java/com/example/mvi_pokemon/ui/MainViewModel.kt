@@ -44,7 +44,7 @@ constructor(
 
                     }
                     Intent.None -> {
-                        // who cares
+
                     }
                 }
             }
