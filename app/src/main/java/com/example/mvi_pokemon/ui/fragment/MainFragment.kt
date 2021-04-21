@@ -59,7 +59,7 @@ constructor(
                     is DataState.Success -> {
                         displayProgressBar(false)
 
-                        pokemonsAdapter.setCats(it.pokemons)
+                        pokemonsAdapter.setPokemons(it.pokemons)
                     }
                     is DataState.Error -> {
                         displayProgressBar(false)

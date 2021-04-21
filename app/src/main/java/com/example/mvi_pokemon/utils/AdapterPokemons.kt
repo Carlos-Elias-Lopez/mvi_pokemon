@@ -23,7 +23,7 @@ class AdapterPokemons () : RecyclerView.Adapter<AdapterPokemons.ViewHolder>() {
         }
 
     }
-    fun setCats(items: List<Pokemon>) {
+    fun setPokemons(items: List<Pokemon>) {
         this.items = items as ArrayList<Pokemon>
         notifyDataSetChanged()
     }
@@ -38,14 +38,13 @@ class AdapterPokemons () : RecyclerView.Adapter<AdapterPokemons.ViewHolder>() {
         holder.sizeInfo.text = model.name
 
         Picasso.get()
-                .load(model.url)
-                .into(holder.pokemonImage)
+                 .load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + position.toString() + ".png")
+                 .into(holder.pokemonImage)
 
     }
-    class ViewHolder (view: View) : RecyclerView.ViewHolder(view) {
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         // Estas son las variables que almacenaran para presentarlos en item_Pokemons
         val pokemonImage: ImageView = view.pokemon_image
-        //val pokemonImage: ImageView = view.pokemon_image
         val sizeInfo: TextView = view.size_info
     }
 }
